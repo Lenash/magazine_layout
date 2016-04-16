@@ -70,6 +70,7 @@ h5 {
 .top-quote {
   color: #b6b6b6;
   letter-spacing: normal;
+  -moz-transform: none;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -80,12 +81,18 @@ h5 {
 
 .right-quote {
   white-space: pre;
+  position: absolute;
+  top: 30em;
+  right: -3em;
 }
 
 .left-quote {
   font-size: .7em;
   letter-spacing: .5em;
   line-height: 1.583;
+  position: absolute;
+  left: 3em;
+  top: 64em;
 }
 
 .top-bar {
@@ -323,29 +330,55 @@ span {
   width: 4.18em;
 }
 
+.bottom {
+  height: 59em;
+  position: relative;
+  top: 65.5em;
+  left: 5.5em;
+}
+
+.bottom .right-quote {
+  white-space: pre;
+  position: absolute;
+  top: 31em;
+  right: 2em;
+}
+
+.bottom .left-quote {
+  font-size: .7em;
+  letter-spacing: .5em;
+  line-height: 1.583;
+  position: absolute;
+  left: -6em;
+  top: 64em;
+}
+
 .bottom-quote {
   color: #b6b6b6;
   letter-spacing: normal;
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  position: absolute;
-  bottom: 83em;
 }
 
 .bottom-caption {
   height: 30em;
-  position: relative;
-  left: 21em;
-  top: 81.25em;
+  position: absolute;
+  top: 16em;
+  left: 24.25em;
   width: 65.7em;
+}
+
+.bottom-caption .overly-box {
+  position: absolute;
+  top: 30em;
 }
 
 /*FOOTER*/
 
 .footer {
   position: relative;
-  top: 25.25em;
+  top: 7em;
   left: -0.7em;
 }
 
